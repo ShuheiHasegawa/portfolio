@@ -942,8 +942,20 @@ textarea.form-control, textarea.form-control:focus {
 /* --- End Simple Info List --- */
 
 /* --- Info block with Icon --- */
+.info-list-w-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 767px) {
+  .info-list-w-icon {
+    grid-template-columns: 1fr;
+  }
+}
+
 .info-block-w-icon {
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 
 .info-block-w-icon .ci-text h4 {
